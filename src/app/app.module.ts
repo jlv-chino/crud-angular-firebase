@@ -8,11 +8,9 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-//**********************************************************************//
 
 //*** Importamos la configuración de firebase ***//
 import { environment } from 'src/environments/environment';
-//**********************************************************************//
 
 @NgModule({
   declarations: [
