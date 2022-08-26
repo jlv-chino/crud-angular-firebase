@@ -11,10 +11,16 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 //*** Importamos la configuración de firebase ***//
 import { environment } from 'src/environments/environment';
+import { ShowComponent } from './components/show/show.component';
+import { CreateComponent } from './components/create/create.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowComponent,
+    CreateComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
