@@ -1,1 +1,27 @@
 <h2>Componente SHOW</h2>
+
+<div class="d-grip gap-2 mt-4">
+    <a routerLink="/create" class="btn btn-primary" type="button">Crear</a> 
+</div>
+
+<table class="table table-hover table-striped">
+    <thead class="bg dark text-white">
+        <tr>
+            <th>Título</th>
+            <th>Contenido</th>
+            <th>Autor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of Posts">
+            <td>{{ post.title}}</td>
+            <td>{{ post.content }}</td>
+            <td>{{ post.author }}</td>
+            <td>
+                <button routerLink="/edit/{{ post.id }}"><i class="fa-solid fa-pen"></i></button>
+                <button (click)="deleteRow(post)" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
