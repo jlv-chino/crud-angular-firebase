@@ -1,1 +1,20 @@
 <h2>Componente EDIT</h2>
+
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class="mb-3">
+        <label class="form-label"> Título </label>
+        <input formControlName="title" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label"> Contenido </label>
+        <input formControlName="content" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label"> Autor </label>
+        <input formControlName="author" type="text" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Actualizar </button>
+
+</form>
